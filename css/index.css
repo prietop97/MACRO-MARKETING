@@ -365,6 +365,7 @@ p {
   margin: 0 auto;
   text-align: center;
   justify-content: space-evenly;
+  text-transform: uppercase;
 }
 .heading h1 {
   font-size: 4.5rem;
@@ -379,7 +380,7 @@ p {
 }
 @media (max-width: 500px) {
   .heading h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 }
 .heading .heading-icons {
@@ -390,6 +391,11 @@ p {
 .heading .heading-icons i {
   padding: 2rem;
   color: green;
+}
+@media (max-width: 500px) {
+  .heading .heading-icons i {
+    font-size: 1.7rem;
+  }
 }
 .heading .btn {
   padding: 1.7rem 5rem;
