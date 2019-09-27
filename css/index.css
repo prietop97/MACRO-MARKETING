@@ -371,6 +371,17 @@ p {
   line-height: 1.4;
   color: #333;
 }
+@media (max-width: 800px) {
+  .heading h1 {
+    width: 95%;
+    font-size: 3.6rem;
+  }
+}
+@media (max-width: 500px) {
+  .heading h1 {
+    font-size: 3.2rem;
+  }
+}
 .heading .heading-icons {
   display: flex;
   font-size: 2.3rem;
@@ -387,6 +398,17 @@ p {
   color: white;
   font-size: 1.8rem;
   font-weight: 700;
+  margin: 3rem 0;
+}
+@media (max-width: 800px) {
+  .heading .btn {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .heading .btn {
+    width: 95%;
+  }
 }
 .heading p {
   font-style: italic;
@@ -532,20 +554,31 @@ p {
   margin: 0 auto;
 }
 .featurescontainer .btn {
-  padding: 1.7rem 0;
+  width: 20%;
+  padding: 2rem 0;
   background: linear-gradient(45deg, #ff9234 0%, #ffcd3c 100%) #ffcd3c;
   text-align: center;
   border-radius: 1.7rem 0 1.7rem 0;
   color: black;
   font-size: 1.5rem;
   font-weight: 700;
-  margin-top: 2rem;
+  margin-top: 10rem;
 }
 @media (max-width: 1180px) {
   .featurescontainer .btn {
-    width: 70%;
+    width: 30%;
     margin: 0 auto;
     margin-top: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .featurescontainer .btn {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .featurescontainer .btn {
+    width: 95%;
   }
 }
 .featurescontainer .insidecontainer {
@@ -656,6 +689,7 @@ p {
 .steps .stepscontainer .one h2 {
   color: #fff;
   font-size: 3rem;
+  text-align: center;
 }
 @media (max-width: 1180px) {
   .steps .stepscontainer .one h2 {
@@ -667,7 +701,7 @@ p {
   background: linear-gradient(45deg, #ff9234 0%, #ffcd3c 100%) #ffcd3c;
   text-align: center;
   border-radius: 1.7rem 0 1.7rem 0;
-  color: black;
+  color: #333;
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 2rem;
@@ -677,6 +711,11 @@ p {
     width: 70%;
     margin: 0 auto;
     margin-top: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .steps .stepscontainer .one .btn {
+    width: 95%;
   }
 }
 .steps .stepscontainer .two {

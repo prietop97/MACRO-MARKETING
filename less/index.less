@@ -36,6 +36,13 @@ p{
         font-size: 4.5rem;
         line-height: 1.4;
         color: #333;
+        @media @tablet{
+            width: 95%;
+            font-size: 3.6rem;
+        }
+        @media @phone{
+            font-size: 3.2rem;
+        }
     }
     .heading-icons{
         display: flex;
@@ -53,6 +60,13 @@ p{
         color: white;
         font-size: 1.8rem;
         font-weight: 700;
+        margin: 3rem 0;
+        @media @tablet{
+            font-size:  1.5rem;
+        }
+        @media @phone{
+            width: 95%;
+        }
     }
     p{
         font-style: italic;
@@ -182,18 +196,25 @@ p{
         margin: 0 auto;
     }
     .btn{
-        padding: 1.7rem 0;
+        width: 20%;
+        padding: 2rem 0;
         background: @yellowBtn;
         text-align: center;
         border-radius: 1.7rem 0 1.7rem 0;
         color: black;
         font-size: 1.5rem;
         font-weight: 700;
-        margin-top: 2rem;
+        margin-top: 10rem;
         @media @bigtablet{
-            width: 70%;
+            width: 30%;
             margin: 0 auto;
             margin-top: 3rem;
+        }
+        @media @tablet{
+            width: 70%;
+        }
+        @media @phone{
+            width: 95%;
         }
     }
     .insidecontainer{
@@ -278,6 +299,7 @@ p{
             h2{
                 color: #fff;
                 font-size: 3rem;
+                text-align: center;
                 @media @bigtablet{
                     font-size: 4rem;
                 }
@@ -287,7 +309,7 @@ p{
                 background: @yellowBtn;
                 text-align: center;
                 border-radius: 1.7rem 0 1.7rem 0;
-                color: black;
+                color: #333;
                 font-size: 1.5rem;
                 font-weight: 700;
                 margin-top: 2rem;
@@ -295,6 +317,9 @@ p{
                     width: 70%;
                     margin: 0 auto;
                     margin-top: 3rem;
+                }
+                @media @phone{
+                    width: 95%;
                 }
             }
         }
