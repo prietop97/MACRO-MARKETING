@@ -400,7 +400,7 @@ footer .footersignup p {
   font-size: 1.76rem;
   width: 80%;
   background: #f3f3f3;
-  text-align: start;
+  text-align: center;
   max-height: 0;
   overflow: hidden;
   transition: 0.35s ease-in-out;
@@ -412,6 +412,9 @@ footer .footersignup p {
 }
 .container2 .accordion-content p {
   padding: 0 1.6rem;
+}
+.container2 .accordion-content p a {
+  font-weight: 700;
 }
 .contact-section {
   display: flex;
