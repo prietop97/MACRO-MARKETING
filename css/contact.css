@@ -4,23 +4,21 @@
   margin: 4rem auto;
   border-radius: 7rem 0 7rem 0;
 }
+@media (max-width: 800px) {
+  .littlecontainerwhite {
+    margin: 0;
+  }
+}
 .littlecontainerpurple {
   background: linear-gradient(-45deg, #b254b2 0%, #6b40ab 100%) #b254b2;
   width: 80%;
   margin: 4rem auto;
   border-radius: 7rem 0 7rem 0;
 }
-.circle {
-  border-radius: 50%;
-  width: 7.5rem;
-  height: 7.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  color: black;
-  text-align: center;
-  font-weight: 600;
+@media (max-width: 800px) {
+  .littlecontainerpurple {
+    margin: 0;
+  }
 }
 * {
   margin: 0;
@@ -349,6 +347,7 @@ footer .footersignup p {
 .heading h1 {
   font-size: 4.8rem;
   margin: 8rem 0;
+  color: #333;
 }
 @media (max-width: 1180px) {
   .heading h1 {

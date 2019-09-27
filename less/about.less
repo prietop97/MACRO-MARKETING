@@ -36,28 +36,46 @@ p{
     }
     .btn{
         padding: 2rem 7rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+        background: @mainColor;
+        color: white;
+        font-weight: 700;
+        border-radius: 2rem 0 2rem 0;
     }
     .italic{
         font-style: italic;
         font-size: 2.3rem;
         font-weight: 600;
         margin: 4rem 0;
+        text-transform: uppercase;
     }
 }
 
 
 
 .container{
-    background: rgb(52, 182, 228);
+    background: @mainColor;
     width: 100%;
     border-radius: 10rem 0 0 0;
     padding: 4rem 0;
     margin-top: 6rem;
+    @media @tablet{
+        border-radius: 0;
+    }
     h2{
         text-align: center;
         font-size: 4.5rem;
         color: white;
+        @media @bigtablet{
+            width: 90%;
+        }
+        @media @tablet{
+            width: 95%;
+        }
+        @media @phone{
+            width: 100%;
+            font-size: 4rem; 
+        }
     }
     .cardscontainer{
         width: 80%;
@@ -65,6 +83,9 @@ p{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media @bigtablet{
+            width: 95%;
+        }
         .cardd{
             background: #fff;
             display: flex;
@@ -74,6 +95,17 @@ p{
             text-align: center;
             margin-top: 3rem;
             border-radius: 3rem 0 3rem 0;
+            @media @bigtablet{
+                width: 48%;
+            }
+            @media @tablet{
+                width: 95%;
+                margin: 0 auto;
+                margin-top: 5rem;
+                &:first-child{
+                    margin-top: 0;
+                }
+            }
             img{
                 border-radius: 50%;
                 width: 30%;
