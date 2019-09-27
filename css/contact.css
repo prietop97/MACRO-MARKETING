@@ -10,7 +10,7 @@
   }
 }
 .littlecontainerpurple {
-  background: linear-gradient(-45deg, #b254b2 0%, #6b40ab 100%) #b254b2;
+  background: linear-gradient(-45deg, #b254b2 50%, #6b40ab 100%) #b254b2;
   width: 80%;
   margin: 4rem auto;
   border-radius: 7rem 0 7rem 0;
@@ -166,6 +166,9 @@ header .nav2 .btn {
   background: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
   border-radius: 1.7rem 0 1.7rem 0;
   color: white;
+}
+header .nav2 .btn:hover {
+  background: linear-gradient(135deg, #3C8CE7 40%, #00EAFF 100%);
 }
 footer {
   display: flex;
