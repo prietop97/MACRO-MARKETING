@@ -10,7 +10,7 @@
   }
 }
 .littlecontainerpurple {
-  background: linear-gradient(-45deg, #b254b2 0%, #6b40ab 100%) #b254b2;
+  background: linear-gradient(-45deg, #b254b2 50%, #6b40ab 100%) #b254b2;
   width: 80%;
   margin: 4rem auto;
   border-radius: 7rem 0 7rem 0;
@@ -166,6 +166,9 @@ header .nav2 .btn {
   background: linear-gradient(135deg, #3C8CE7 10%, #00EAFF 100%);
   border-radius: 1.7rem 0 1.7rem 0;
   color: white;
+}
+header .nav2 .btn:hover {
+  background: linear-gradient(135deg, #3C8CE7 40%, #00EAFF 100%);
 }
 footer {
   display: flex;
@@ -367,6 +370,12 @@ p {
   justify-content: space-evenly;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .heading {
+    height: 70vh;
+    justify-content: center;
+  }
+}
 .heading h1 {
   font-size: 4.5rem;
   line-height: 1.4;
@@ -388,13 +397,18 @@ p {
   font-size: 2.3rem;
   font-weight: 800;
 }
+@media (max-width: 800px) {
+  .heading .heading-icons {
+    flex-direction: column;
+  }
+}
 .heading .heading-icons i {
   padding: 2rem;
   color: green;
 }
 @media (max-width: 500px) {
   .heading .heading-icons i {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 .heading .btn {
@@ -403,8 +417,11 @@ p {
   border-radius: 1.7rem 0 1.7rem 0;
   color: white;
   font-size: 1.8rem;
-  font-weight: 700;
+  font-weight: 600;
   margin: 3rem 0;
+}
+.heading .btn:hover {
+  background: linear-gradient(135deg, #3C8CE7 40%, #00EAFF 100%);
 }
 @media (max-width: 800px) {
   .heading .btn {
@@ -504,7 +521,7 @@ p {
 }
 .cardz .callingcard h3 {
   font-size: 2rem;
-  background: linear-gradient(-45deg, #b254b2 0%, #6b40ab 100%) #b254b2;
+  background: linear-gradient(-45deg, #b254b2 50%, #6b40ab 100%) #b254b2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 2rem 0;
@@ -570,6 +587,9 @@ p {
   font-weight: 700;
   margin-top: 10rem;
 }
+.featurescontainer .btn:hover {
+  background: linear-gradient(45deg, #ff9234 30%, #ffcd3c 100%) #ffcd3c;
+}
 @media (max-width: 1180px) {
   .featurescontainer .btn {
     width: 30%;
@@ -617,7 +637,7 @@ p {
   }
 }
 .featurescontainer .insidecontainer .features h3 {
-  background: linear-gradient(135deg, #3C8CE7 40%, #00EAFF 100%);
+  background: linear-gradient(-45deg, #b254b2 50%, #6b40ab 100%) #b254b2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 4rem;
@@ -630,7 +650,7 @@ p {
 }
 .featurescontainer .insidecontainer .features i {
   font-size: 8rem;
-  background: linear-gradient(135deg, #3C8CE7 40%, #00EAFF 100%);
+  background: linear-gradient(-45deg, #b254b2 50%, #6b40ab 100%) #b254b2;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -711,6 +731,9 @@ p {
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 2rem;
+}
+.steps .stepscontainer .one .btn:hover {
+  background: linear-gradient(45deg, #ff9234 30%, #ffcd3c 100%) #ffcd3c;
 }
 @media (max-width: 1180px) {
   .steps .stepscontainer .one .btn {
