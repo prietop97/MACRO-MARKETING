@@ -1,0 +1,354 @@
+// Follow the order in the readme
+@import "variables";
+@import "classes";
+@import "mixins";
+@import "reset";
+@import "nav";
+@import "footer";
+body{
+    max-height: 100% !important;
+    max-width: 100% !important;
+}
+
+h2,h3,h4,h5,h6{
+    font-size: 3rem;
+    line-height: 1.4;
+    color: #333;
+}
+p{
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 90%;
+    // height: 50vh;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-evenly;
+    h1{
+        font-size: 4.5rem;
+        line-height: 1.4;
+        color: #333;
+    }
+    .heading-icons{
+        display: flex;
+        font-size: 2.3rem;
+        font-weight: 800;
+        i{
+            padding: 2rem;
+            color: green;
+        }
+    }
+    .btn{
+        padding: 1.7rem 5rem;
+        background: @mainColor;
+        border-radius: 1.7rem 0 1.7rem 0;
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+    p{
+        font-style: italic;
+        font-weight: 500;
+
+    }
+}
+
+
+
+/////////////////// MAIN CONTENT /////////////
+.container{
+    margin-top: 6rem;
+    // background: rgb(52, 182, 228);
+    background: @mainColor;
+    // width: 100%;
+    // height: 500rem;
+    border-radius: 10rem 0 0 0;
+    padding: 6rem 0 6rem 0;
+    @media @bigtablet{
+        border-radius: 0;
+    }
+    @media @tablet{
+        margin: 0;
+        padding: 0;
+    }
+    h3{
+        font-size: 5rem;
+        text-align: center;
+        color: #fff;
+        @media @tablet{
+            padding-top: 3.5rem;
+        }
+    }
+}
+
+.cardz{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    margin-top:2rem;
+    margin-bottom: 10rem;
+    justify-content: space-around;
+    @media @homepagedesk{
+        width: 90%;
+    }
+    @media @bigtablet{
+        width: 100%;
+    }
+    @media @tablet{
+        flex-wrap: wrap;
+    }
+    .callingcard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width:20%;
+        padding: 2rem;
+        background: #fff;
+        border-radius: 2rem 0 2rem 0;
+        @media @homepagedesk{
+            width: 30%;
+        }
+        @media @bigtablet{
+            width: 30%;
+        }
+        @media @tablet{
+            width: 60%;
+            border-radius: 4rem 0 4rem 0;
+            margin: 2rem 0;
+        }
+        @media @phone{
+            width: 90%;
+        }
+        h3{
+            font-size: 2rem;
+            background: @purpleGradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 2rem 0;
+            height: 30%;
+        }
+        p{
+            color: #333;
+            font-size: 1.5rem;
+            height: 60%;
+        }
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 50%;
+            height: 150px;
+            margin: 2rem 0;
+        }
+    }
+}
+
+
+
+.featurescontainer{
+    padding: 8rem 0;
+    @media @homepagedesk{
+        padding: 5rem 0;
+        width: 90%;
+    }
+    @media @bigtablet{
+        width: 100%;
+    }
+    @media @tablet{
+        border-radius: 0;
+    }
+    h2{
+        font-size: 4rem;
+        text-align: center;
+        text-transform: uppercase;
+        @media @tablet{
+            font-size: 3.5rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        width: 20rem;
+        margin: 0 auto;
+    }
+    .btn{
+        padding: 1.7rem 0;
+        background: @yellowBtn;
+        text-align: center;
+        border-radius: 1.7rem 0 1.7rem 0;
+        color: black;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-top: 2rem;
+        @media @bigtablet{
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 3rem;
+        }
+    }
+    .insidecontainer{
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        text-align: center;
+        @media @homepagedesk{
+            width: 90%;
+        }
+        .features{
+            margin-top: 7rem;
+            width: 45%;
+            @media @tablet{
+                width: 70%;
+                margin: 7rem auto;
+            }
+            @media @phone{
+                width: 95%;
+                margin: 4rem auto;
+            }
+            h3{
+                background: @hoverColor;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-size: 4rem;
+                text-transform: uppercase;
+                @media @homepagedesk{
+                    font-size: 3rem;
+                }
+            }
+            i{
+                font-size: 8rem;
+                background: @hoverColor;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                @media @homepagedesk{
+                    font-size: 8rem;
+                }
+            }
+        }
+    }
+}
+.steps{
+    padding: 8rem 0;
+    @media @homepagedesk{
+        width: 95%;
+    }
+    @media @bigtablet{
+        width: 100%;
+    }
+    @media @tablet{
+        border-radius: 0;
+    }
+    .stepscontainer{
+        width:80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @media @homepagedesk{
+            width: 95%;
+        }
+        @media @bigtablet{
+            flex-direction: column;
+            align-items: center;
+        }
+        .one{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 20%;
+            @media @homepagedesk{
+                width: 20%;
+            }
+            @media @bigtablet{
+                width: 95%;
+                text-align: center;
+                order:2
+            }
+            h2{
+                color: #fff;
+                font-size: 3rem;
+                @media @bigtablet{
+                    font-size: 4rem;
+                }
+            }
+            .btn{
+                padding: 1.7rem 0;
+                background: @yellowBtn;
+                text-align: center;
+                border-radius: 1.7rem 0 1.7rem 0;
+                color: black;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-top: 2rem;
+                @media @bigtablet{
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-top: 3rem;
+                }
+            }
+        }
+        .two{
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            font-size: 3rem;
+            margin: 5rem 0;
+            height:100%;
+            @media @bigtablet{
+                width: 100%;
+            }
+            @media @tablet{
+                flex-direction: column;
+                
+            }
+            .stepp{
+                width: 33.3%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                @media @tablet{
+                    width: 100%;
+                    margin-top:5rem;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                }
+                h3{
+                    font-size: 2.2rem;
+                    color: white;  
+                    font-weight: 400;
+                }
+                .circle{
+                    border-radius: 50%;
+                    width: 7.5rem;
+                    height: 7.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: white;
+                    color: black;
+                    text-align: center;
+                    font-weight: 600;
+                    p{
+                        font-size: 3rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+            
+    }
+}

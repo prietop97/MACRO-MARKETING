@@ -1,0 +1,92 @@
+header{
+    max-width: 1500px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 4.8rem auto;
+    @media @bigtablet{
+        flex-wrap: wrap;
+    }
+    @media @phone{
+        margin: 1.6rem 0;
+    }
+    .logo{
+        display: flex;
+        width: 33%;
+        font-size: 1.6rem;
+        color: #333;
+        justify-content: flex-start;
+        @media @bigtablet{
+            width: 50%;
+            order:1;
+            justify-content: center;
+        }
+        @media @tablet{}
+        @media @phone{
+            width: 100%;
+        }
+        h1{
+            margin-left: 1.6rem;
+            @media @tablet{
+                font-size: 3rem;
+            }
+            @media @phone{
+                font-size: 4rem;
+            }
+        }
+    }
+    .nav1{
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        @media @bigtablet{
+            width: 100%;
+            order: 3;
+            margin-top: 4.8rem;
+            text-align: center;
+            background: @mainColor;
+            padding: 1.6rem;
+        }
+        @media @phone{
+            margin: 1.6rem auto;
+        }
+        a{
+            width: 33%;
+            margin: 0 auto;
+            text-align: center;
+            @media @bigtablet{
+                color: white;
+            }
+        }
+    }
+    .nav2{
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media @bigtablet{
+            width: 50%;
+            order: 2;
+            justify-content: center;
+        }
+        @media @phone{
+            width: 100%;
+            margin-top: 1.6rem;
+        }
+        a{
+        margin: 0 2rem;
+            @media @bigtablet{
+                margin: 0 1rem;
+            }
+        }
+        .btn{
+            padding: 1.7rem 5rem;
+            background: @mainColor;
+            border-radius: 1.7rem 0 1.7rem 0;
+            color: white;
+        }
+    }
+
+}

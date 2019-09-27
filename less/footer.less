@@ -1,0 +1,157 @@
+////////////////// FOOTER ///////////////////////////
+footer{
+    // margin-top: 8rem;
+    display: flex;
+    background: #fff;
+    align-items: space-around; 
+    justify-content: space-around;
+    border-top: 3px #333 solid;
+    @media @bigtablet{
+        flex-wrap: wrap;
+        justify-content: center; 
+        text-align: center;
+    }
+    .footerabout{
+        width: 40%;
+        padding: 3.2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        @media @bigtablet{
+            width:80%;
+        }
+
+        h2{
+            font-size: 3.2rem;
+            line-height: 1.5;
+            color: #333;
+        }
+        p{
+            font-size: 1.6rem;
+            color: #333;
+
+        }
+        .abouticons{
+            font-size: 4rem;
+            display: flex;
+            justify-content: center;
+            padding-top: 1.6rem;
+            @media @bigtablet{
+                justify-content: space-evenly;
+            }
+            i{
+                color: #333;
+                padding: 0 2rem;
+                @media @bigtablet{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    .footernav{
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        text-align: center;
+        justify-content: flex-start;
+        padding-top: 4rem;
+        h2{
+            font-size: 1.6rem;
+        }
+        @media @bigtablet{
+            width:40%;
+        }
+        @media @phone{
+            width: 80%;
+        }
+        a{
+            font-size: 1.6rem;
+            color: #333;
+            font-weight: 500;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+
+    .footerlegal{
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        justify-content: flex-start;
+        padding-top: 4rem;
+        text-align: center;
+        h2{
+            font-size: 1.6rem;
+        }
+        @media @bigtablet{
+            width:40%;
+        }
+        @media @phone{
+            width: 100%;
+            margin-top: 2rem;
+        }
+        a{
+            font-size: 1.6rem;
+            color: #333;
+            font-weight: 500;
+            width: 100%;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .footersignup{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        padding: 3.2rem;
+        align-items: center;
+        text-align: center;
+        @media @bigtablet{
+            width:80%;
+            align-items: center;
+        }
+        @media @phone{
+            width: 100%;
+        }
+        h2{
+            font-size: 3.2rem;
+            line-height: 1.2;
+            color: #333;
+        }
+        form{
+            width: 100%;
+            margin-top: 1.6rem;
+            display: flex;
+            justify-content: center;
+            @media @bigtablet{
+                justify-content: center;
+            }
+            input{
+                padding: 0.6rem;
+                width: 60%;
+            }
+            .btnn{
+                border-radius: 0.2rem;
+                padding: 0.6rem 3.2rem;
+                cursor:pointer;
+                overflow: hidden;
+                background-color: transparent;
+                background-repeat:no-repeat;
+                border: 3px #333 solid;
+                color: #333;
+                font-weight: 700;
+                font-size: 1.3rem;
+            }
+        }
+        p{
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+    }
+}
