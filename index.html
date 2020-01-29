@@ -186,7 +186,7 @@
       <h2>SIGN UP TO OUR NEWSLETTER</h2>
       <form action="email">
         <input type="email" placeholder="Email">
-        <button class="btnn">SIGN UP</button>
+        <button class="btnn" id="preventD">SIGN UP</button>
       </form>
       <p>By clicking sign up you agree to the Terms and Conditions and Privacy Policy</p>
 
@@ -202,5 +202,12 @@
 
 
 </body>
+<script>
+  const btn = document.querySelector("#preventD");
+  const preventD = (e) => {
+    e.preventDefault();
+  }
+  btn.addEventListener("click", preventD)
+</script>
 
 </html>

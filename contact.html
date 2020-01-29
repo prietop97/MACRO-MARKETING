@@ -75,7 +75,7 @@
                     <input type="email" class="contact-form-text" placeholder="Your Email">
                     <input type="text" class="contact-form-text" placeholder="Your Phone Number">
                     <textarea class="contact-form-text" placeholder="Your Message"></textarea>
-                    <button class="contactbtn">SEND</button>
+                    <button class="contactbtn" id="preventD">SEND</button>
                 </form>
             </div>
         </section>
@@ -99,8 +99,8 @@
                 <a href="index.html">HOME</a>
                 <a href="contact.html">CONTACT</a>
                 <a href="about.html">ABOUT US</a>
-                <a href="https://youthful-ardinghelli-be4d90.netlify.com/">LOG IN</a>
-                <a href="https://youthful-ardinghelli-be4d90.netlify.com/">SIGN UP</a>
+                <a href="#">LOG IN</a>
+                <a href="#">SIGN UP</a>
             </div>
 
 
@@ -118,7 +118,7 @@
                 <h2>SIGN UP TO OUR NEWSLETTER</h2>
                 <form action="email">
                     <input type="email" placeholder="Email">
-                    <button class="btnn">SIGN UP</button>
+                    <button class="btnn" id="preventD">SIGN UP</button>
                 </form>
                 <p>By clicking sign up you agree to the Terms and Conditions and Privacy Policy</p>
 
@@ -128,6 +128,13 @@
         </footer>
     </div>
     <script src="./js/contact.js"></script>
+    <script>
+        const btn = document.querySelector("#preventD");
+        const preventD = (e) => {
+            e.preventDefault();
+        }
+        btn.addEventListener("click", preventD)
+    </script>
 </body>
 
 </html>
